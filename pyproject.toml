@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"   # PEP 517/518 backend :contentReference[oaicite:4]{index=4}
+
+[project]
+name = "clubbrugge"
+version = "0.1.0"
+description = "Optical-tracking loaders & metrics for Club Brugge assessment"
+readme = "README.md"                      # shown on package page :contentReference[oaicite:5]{index=5}
+license = { text = "MIT" }                # SPDX or expression is fine :contentReference[oaicite:6]{index=6}
+authors = [{ name = "Kheibar Atai", email = "info@brelink.nl" }]
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "numpy>=1.26",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "ruff>=0.4.4",
+]
+
+[project.urls]
+Source = "https://github.com/kheibarito/ClubBrugge2025.git"
+
+[tool.setuptools.packages.find]
+where = ["src"]                           # src-layout auto-discover :contentReference[oaicite:7]{index=7}
+
+[tool.ruff]
+line-length = 100                         # Ruff reads config from pyproject :contentReference[oaicite:8]{index=8}

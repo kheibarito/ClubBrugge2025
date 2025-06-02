@@ -1,0 +1,54 @@
+# ----------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ----------------------------------------------------------------------
+# Virtual-environments
+.venv/
+.env/
+.conda/
+.Python          # per-user virtualenv spec
+
+# ----------------------------------------------------------------------
+# Distribution / packaging
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+
+# ----------------------------------------------------------------------
+# Unit-test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ----------------------------------------------------------------------
+# Type-checking / lint caches
+.mypy_cache/
+ruff_cache/
+
+# ----------------------------------------------------------------------
+# IDE settings (PyCharm / VS Code etc.)
+.idea/
+.vscode/
+
+# ----------------------------------------------------------------------
+# Generated data & large artefacts
+data/
+SourceFiles/
+*.parquet
+
+# ----------------------------------------------------------------------
+# Miscellaneous OS files
+.DS_Store
+Thumbs.db
